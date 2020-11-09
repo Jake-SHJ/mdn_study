@@ -27,6 +27,19 @@ fruits.forEach(function (item, index, array) {
 console.log("-----");
 
 // 배열 끝에 항목 추가하기
+
 let newLength = fruits.push("orange");
 console.log(fruits); // [ 'apple', 'banana', 'orange' ]
+console.log("-----");
+
+// 배열 끝에서부터 항목 제거하기
+
+last = fruits.pop();
+console.log(fruits); // [ 'apple', 'banana' ]
+console.log("-----");
+
+// 배열 앞에서부터 항목 제거하기
+
+first = fruits.shift();
+console.log(fruits); // [ 'banana' ]
 console.log("-----");
