@@ -43,3 +43,18 @@ console.log("-----");
 first = fruits.shift();
 console.log(fruits); // [ 'banana' ]
 console.log("-----");
+
+// 배열에 항목 추가하기
+
+newLength = fruits.unshift("strawberry"); // 앞에 추가
+console.log(fruits); // [ 'strawberry', 'banana' ]
+
+newLength = fruits.push("mango"); // 뒤에 추가
+console.log(fruits); // [ 'strawberry', 'banana', 'mango' ]
+console.log("-----");
+
+// 배열 안 항목 인덱스 찾기
+
+let pos = fruits.indexOf("banana");
+console.log(pos); // 1
+console.log("-----");
