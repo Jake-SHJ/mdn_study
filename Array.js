@@ -58,3 +58,25 @@ console.log("-----");
 let pos = fruits.indexOf("banana");
 console.log(pos); // 1
 console.log("-----");
+
+// 인덱스 위치에 있는 항목 제거하기
+
+let removedItem = fruits.splice(pos, 1);
+console.log(fruits); // [ 'strawberry', 'mango' ]
+console.log("-----");
+
+// 인덱스 위치에서부터 여러개의 항목 제거하기
+
+let vegetables = ["cabbage", "turnip", "radish", "carrot"];
+pos = 1;
+let n = 2;
+
+let removedItems = vegetables.splice(pos, n);
+console.log(vegetables); // [ 'cabbage', 'carrot' ]
+console.log(removedItems); // [ 'turnip', 'radish' ]
+console.log("-----");
+
+// 배열 복사하기
+let shallowCopy = fruits.slice();
+console.log(shallowCopy); // [ 'strawberry', 'mango' ]
+console.log("-----");
