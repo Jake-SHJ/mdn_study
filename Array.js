@@ -99,3 +99,28 @@ console.log(years["2"] != years["02"]);
 console.log(years[2] === years["2"]);
 // 숫자 2는 암시적인 toString 변환을 사용해 문자열로 변환됨
 console.log("-----");
+
+/**
+ * length와 숫자형 속성의 관계
+ */
+
+fruits = [];
+fruits.push("banana", "apple", "peach");
+console.log(fruits.length); // 3
+
+// 유효한 배열의 인덱스 && 배열의 경계 초과 => JavaScript 엔진이 배열의 length 속성을 그에 맞춰 업데이트
+fruits[5] = "mango";
+console.log(fruits[5]); // mango
+console.log(Object.keys(fruits)); // ['0', '1', '2', '5']
+console.log(fruits.length); // 6
+
+// 직접 늘리기
+fruits.length = 10;
+console.log(Object.keys(fruits)); // ['0', '1', '2', '5']
+console.log(fruits.length); // 10
+
+// 감소시키면 요소를 지움
+fruits.length = 2;
+console.log(Object.keys(fruits)); // ['0', '1']
+console.log(fruits.length); // 2
+console.log("-----");
