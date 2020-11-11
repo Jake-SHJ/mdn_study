@@ -80,3 +80,22 @@ console.log("-----");
 let shallowCopy = fruits.slice();
 console.log(shallowCopy); // [ 'strawberry', 'mango' ]
 console.log("-----");
+
+/**
+ * 배열 요소에 접근하기
+ */
+
+let arr = ["first element", "second element", "third element"];
+console.log(arr[0]); // first element
+console.log(arr[1]); // second element
+console.log(arr[arr.length - 1]); // third element
+
+// 숫자로 시작하는 JavaScript 속성은 마침표 구문으로 접근할 수 없으며, 반드시 괄호 표기법으로 접근해야 함
+
+let years = [1950, 1960, 1970, 1980, 1990, 2000, 2010];
+// console.log(years.0);   // syntax error
+console.log(years[0]); // 정상 작동
+console.log(years["2"] != years["02"]);
+console.log(years[2] === years["2"]);
+// 숫자 2는 암시적인 toString 변환을 사용해 문자열로 변환됨
+console.log("-----");
