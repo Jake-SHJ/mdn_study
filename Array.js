@@ -124,3 +124,18 @@ fruits.length = 2;
 console.log(Object.keys(fruits)); // ['0', '1']
 console.log(fruits.length); // 2
 console.log("-----");
+
+/**
+ * 매치 결과를 이용한 배열 생성
+ */
+
+// 하나의 d와 하나 이상의 b에 하나의 d가 뒤따라 일치해야 함
+
+const myRe = /d(b+)(d)/i;
+const myArray = myRe.exec("cdbBdbsbz");
+console.log(myArray); // [ 'dbBd', 'bB', 'd', index: 1, input: 'cdbBdbsbz', groups: undefined ]
+
+// input: 원본 문자열
+// index: 원본 문자열에서 정규 표현식이 처음 일치하는 문자열의 위치
+// [0]: 원본 문자열에서 정규 표현식이 처음 일치하는 문자열 > 'dbBd'
+// [1], ...[n]: 정규 표현식의 괄호에 일치하는 부분 문자열 > 'bB', 'd'
