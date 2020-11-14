@@ -134,6 +134,7 @@ console.log("-----");
 const myRe = /d(b+)(d)/i;
 const myArray = myRe.exec("cdbBdbsbz");
 console.log(myArray); // [ 'dbBd', 'bB', 'd', index: 1, input: 'cdbBdbsbz', groups: undefined ]
+console.log("-----");
 
 // input: 원본 문자열
 // index: 원본 문자열에서 정규 표현식이 처음 일치하는 문자열의 위치
