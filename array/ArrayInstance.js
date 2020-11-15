@@ -24,5 +24,14 @@ Array.prototype.splice(); // 배열에서 요소를 추가/삭제 및 삭제한 
 Array.prototype.unshift(); // 배열 처음에 요소 추가 및 배열 길이 반환
 
 // 접근자 메서드, 대상 배열을 기반으로 새로운 배열 또는 값을 반환
+Array.prototype.concat(); // 주어진 배열을 이어붙인 새로운 배열을 반환
+Array.prototype.filter(); // 콜백 함수의 반환 결과가 true인 요소만 모은 새로운 배열을 반환
+Array.prototype.includes(); // 배열이 주어진 값을 포함하는지 판별 및 boolean 반환
+Array.prototype.indexOf(); // 주어진 값과 일치하는 제일 앞의 인덱스 반환, 없으면 -1
+Array.prototype.lastIndexOf(); // 주어진 값과 일치하는 제일 뒤의 인덱스 반환, 없으면 -1
+Array.prototype.join(); // 배열의 모든 요소를 문자열로 합치고 해당 문자열 반환
+Array.prototype.slice(); // 배열의 일부를 추출한 새 배열을 반환
+Array.prototype.toString(); // 배열과 그 요소를 나타내는 문자열을 반환
+Array.prototype.toLocaleString(); // 배열과 그 요소를 나타내는 지역화된 문자열을 반환
 
 // 순회 메서드
