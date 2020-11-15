@@ -35,3 +35,15 @@ Array.prototype.toString(); // 배열과 그 요소를 나타내는 문자열을
 Array.prototype.toLocaleString(); // 배열과 그 요소를 나타내는 지역화된 문자열을 반환
 
 // 순회 메서드
+Array.prototype.entries(); // 배열의 각 인덱스에 대한 키/값 쌍을 포함하는 새로운 배열 반복자 객체 반환
+Array.prototype.every(); // 배열의 모든 요소가 주어진 판별 콜백을 만족할 경우 true 반환
+Array.prototype.find(); // 주어진 판별 콜백을 만족하는 첫 번째 요소 반환, 없으면 undefined
+Array.prototype.findIndex(); // 주어진 판별 콜백을 만족하는 첫 번째 요소의 인덱스를 반환, 없으면 undefined
+Array.prototype.forEach(); // 배열의 각각의 요소에 대해 콜백 호출, undefined 반환
+Array.prototype.keys(); // 배열의 각 인덱스에 대한 키를 가지는 새로운 배열 반복자 객체 반환
+Array.prototype.map(); // 배열의 모든 요소 각각에 대하여 주어진 콜백 함수를 호출하고, 그 반환값을 모든 새로운 배열을 반환
+Array.prototype.reduce(); // 주어진 콜백 함수를 가산기와 요소 각각에 대해 왼쪽에서 오른쪽으로 호출하여 하나의 값으로 줄인 결과를 반환
+Array.prototype.reduceRight(); // reduce의 반대로 호출하여 하나의 값으로 줄인 결과를 반환
+Array.prototype.some(); // 배열의 어떤 요소가 주어진 판별 콜백을 만족할 경우 true 반환
+Array.prototype.values(); // 배열의 각 인덱스에 대한 값을 가지는 새로운 배열 반복자 객체를 반환
+Array[Symbol.iterator](); // 배열의 각 인덱스에 대한 값을 가지는 새로운 배열 반복자 객체를 반환
